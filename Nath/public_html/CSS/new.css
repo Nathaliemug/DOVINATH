@@ -196,7 +196,7 @@ footer .sirius {
         padding-left:0;
     }
     .left ul:last-child{
-        padding-left: 0;
+        padding-right: 18rem;
     }
    
     .main-menu ul{
@@ -243,7 +243,7 @@ footer .sirius {
     width: 100%;
     text-align: left;
     background-color: #EBEBEB;
-    line-height: 7rem;
+    line-height: 0rem;
     
 }
     footer .sirius {
