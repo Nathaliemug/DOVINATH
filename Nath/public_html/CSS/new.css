@@ -50,6 +50,26 @@ body{
     padding-left: 6rem;
     padding: 0;
 }
+.container-fluid .navigator .ecole-solidaire.animate{
+    -webkit-animation: alert 5s ease-out 1 normal;
+    -moz-animation: alert 5s ease-out 1 normal;
+    -ms-animation: alert 5s ease-out 1 normal;
+    animation: alert 5s ease-out 1 normal;
+}
+
+@-webkit-keyframes alert {
+    0%{ -webkit-transform: translateX(0); transform: translateX(0); }
+    5%{ -webkit-transform: translateX(100px); transform: translateX(100px); }
+    10%{ -ms-transform: translateX(-100px); transform: translateX(-100px); }
+    15%{ -ms-transform: translateX(0); transform: translateX(0); }
+}
+
+@keyframes alert {
+    0%{ -ms-transform: translateX(0); transform: translateX(0); }
+    5%{ -ms-transform: translateX(100px); transform: translateX(100px); }
+    10%{ -ms-transform: translateX(-100px); transform: translateX(-100px); }
+    15%{ -ms-transform: translateX(0); transform: translateX(0); }
+}
 .flex{
     display: flex;
 }
@@ -112,8 +132,33 @@ body{
 .left{
     float: right;
 }
+/*CSS DU CONTENUE PARAGRAPHE*/
+.description{
+     margin-bottom: 10rem;
+}
+.description h1{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: miso-bold;
+    color: #F02A2A;
+}
+.description flotte{
+    margin-top: 15px;
+    margin-bottom: 0rem;
+    padding-right: 5rem;
+}
+.description p{
+    margin-top:2rem;
+    padding: 0 1.5rem;
+}
+.prologue img{
+    height: 30rem;
+    width: 34rem;
+    padding-left: 9rem;
 
-
+}
+/*FIN CSS DU CONTENUE PARAGRAPHE*/
 
 /*BEBUT FOOTER*/
 
@@ -121,7 +166,7 @@ footer {
     width: 100%;
     text-align: left;
     background-color: #EBEBEB;
-    line-height: 7rem;
+    line-height:7rem;
     bottom: 0;
     position:fixed;
 }
@@ -198,19 +243,50 @@ footer .sirius {
     .left ul:last-child{
         padding-right: 18rem;
     }
-   
+    /*CSS DU CONTENUE PARAGRAPHE*/
+    .description{
+        margin-bottom: 10rem;
+    }
+    .description h1{
+        text-align: center;
+       
+        padding-bottom: 2rem;
+        font-family: miso-bold;
+        color: #F02A2A;
+    }
+    .description flotte{
+        margin-top: 15px;
+        margin-bottom: 0rem;
+       
+    }
+    .description p{
+        margin-top:2rem;
+        padding: 0 1.5rem;
+    }
+    .prologue {
+        text-align: center;
+    }
+    .prologue img{
+        height:auto;
+        width:80%;
+        padding-left: 0;
+       
+
+    }
+    /*FIN CSS DU CONTENUE PARAGRAPHE*/
+
     .main-menu ul{
         padding: 0;
         margin: 0;
         border: none;
         border-radius:0;
     }
-    
+
     .container-fluid .navigator{
         font-size:1rem;
         padding-left:4rem;
     }
-   
+
     .container-fluid .navigator .ecole-solidaire{
         padding-top:0;
     }
