@@ -108,7 +108,23 @@ body{
 .main-menu li{
    display: inline-block; 
    padding-left: 2rem;
+}/*CSS ACCUEIL EVENEMENT*/
+.evenement{
+    font-size:3rem;
+    text-align: center;
+    padding-top: 4rem;
+    font-family: miso-bold;
 }
+.event-card{
+    border:1px solid #000;
+}
+.event-card2{
+    border:1px solid #000;
+}
+
+    
+
+
 /*CSS AJOUTER SOUS-MENU FAQ*/
 /*.sub-menu{
     display:none;
@@ -133,30 +149,35 @@ body{
     float: right;
 }
 /*CSS DU CONTENUE PARAGRAPHE*/
-.description{
-     margin-bottom: 10rem;
-}
-.description h1{
-    text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    font-family: miso-bold;
-    color: #F02A2A;
-}
-.description flotte{
-    margin-top: 15px;
-    margin-bottom: 0rem;
-    padding-right: 5rem;
-}
-.description p{
-    margin-top:2rem;
-    padding: 0 1.5rem;
-}
-.prologue img{
-    height: 30rem;
-    width: 34rem;
-    padding-left: 9rem;
 
+p{
+    text-align: justify;  
+        padding-left: 2rem;
+        padding-right: 2rem;
+}
+h1{
+    font-style: normal;
+    font-size: auto;
+    font-family:miso-bold;
+    margin-top: 2rem;
+    text-align: center;
+    color:#F02A2A;
+}
+.description {
+    margin: 2rem 0;
+}
+.description-image {
+       width: 23rem;
+    height: 30rem;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+        padding-left: 2rem;
+    
+    
+}
+.last-para{
+    margin-bottom: 9rem;
 }
 /*FIN CSS DU CONTENUE PARAGRAPHE*/
 
