@@ -3,6 +3,8 @@
 body{
     height:100%;
     font-size: 15px;
+     margin: 0;
+    padding: 0;
 }
 @font-face {
     font-family: miso-bold;
@@ -19,34 +21,32 @@ body{
 .header{
     background-color:#F02A2A;
     color: #ffffff;
-    padding:5px;
+    height:247px;/*CSS AJOUTER*/
+   
 }
 .mobile-icon{
     display: none;
 }
-.container-fluid .navigator{
-    font-size:1.5rem;
-    padding-left:5rem;
-}
-.container-fluid .navigator .ecole-solidaire{
-    padding-top:2rem;
+
+.ecole-solidaire{
+    padding-left:3rem;
 }
 .container-fluid .navigator .para1{
-    border-bottom: 1px solid #FFFFFF; 
+    border-bottom: 2px solid #FFFFFF; 
     color: #FFF121;
     display: inline-block;
     padding-bottom:0rem;
     font-family: miso-bold;
-    font-size: 3.9rem;
+    font-size: 4.9rem;/*CHANGEMENT*/
 
 }
 .container-fluid .navigator .para2{
-    padding-bottom:1rem;
-    font-size: 2.4rem;
+    padding-bottom:0;
+    font-size: 3.2rem;
     font-family:miso-regular;
 }
 .container-fluid img{
-    height:15rem;
+    height: 15rem;
     padding-left: 6rem;
     padding: 0;
 }
@@ -57,28 +57,21 @@ body{
     animation: alert 5s ease-out 1 normal;
 }
 
-@-webkit-keyframes alert {
-    0%{ -webkit-transform: translateX(0); transform: translateX(0); }
-    5%{ -webkit-transform: translateX(100px); transform: translateX(100px); }
-    10%{ -ms-transform: translateX(-100px); transform: translateX(-100px); }
-    15%{ -ms-transform: translateX(0); transform: translateX(0); }
-}
 
-@keyframes alert {
-    0%{ -ms-transform: translateX(0); transform: translateX(0); }
-    5%{ -ms-transform: translateX(100px); transform: translateX(100px); }
-    10%{ -ms-transform: translateX(-100px); transform: translateX(-100px); }
-    15%{ -ms-transform: translateX(0); transform: translateX(0); }
-}
 .flex{
     display: flex;
 }
 .flex .savoir{
     padding:3rem;
     padding-right: 0;
-    font-family: miso-bold;
-    font-size:2rem;
+    font-family:miso-regular;
+    
     padding-bottom:0;
+}
+.savoir{
+    font-size: 2.9rem;
+    font-family: miso-regular;
+    
 }
 
 .container-fluid .pouvoir{
@@ -108,23 +101,9 @@ body{
 .main-menu li{
    display: inline-block; 
    padding-left: 2rem;
-}/*CSS ACCUEIL EVENEMENT*/
-.evenement{
-    font-size:3rem;
-    text-align: center;
-    padding-top: 4rem;
-    font-family: miso-bold;
-}
-.event-card{
-    border:1px solid #000;
-}
-.event-card2{
-    border:1px solid #000;
 }
 
     
-
-
 /*CSS AJOUTER SOUS-MENU FAQ*/
 /*.sub-menu{
     display:none;
@@ -152,8 +131,8 @@ body{
 
 p{
     text-align: justify;  
-        padding-left: 2rem;
-        padding-right: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 h1{
     font-style: normal;
@@ -162,19 +141,20 @@ h1{
     margin-top: 2rem;
     text-align: center;
     color:#F02A2A;
+   
 }
 .description {
     margin: 2rem 0;
 }
 .description-image {
-       width: 23rem;
+    width: 23rem;
     height: 30rem;
     float: left;
     margin-right: 20px;
     margin-bottom: 20px;
-        padding-left: 2rem;
-    
-    
+    padding-left: 2rem;
+
+
 }
 .last-para{
     margin-bottom: 9rem;
@@ -219,6 +199,28 @@ footer .sirius {
 /*VERSION MOBILE*/
 
 @media only screen and (max-width:770px){
+ .ecole-solidaire{
+    padding-left:3rem;
+}
+.container-fluid .navigator .para1{
+    border-bottom: 2px solid #FFFFFF; 
+    color: #FFF121;
+    display: inline-block;
+    padding-bottom:0rem;
+    font-family: miso-bold;
+    font-size: 2rem;/*CHANGEMENT*/
+
+}
+.container-fluid .navigator .para2{
+    padding-bottom:0;
+    font-size: 3.2rem;
+    font-family:miso-regular;
+}
+.container-fluid img{
+    height: 11rem;
+    padding-left: 6rem;
+    padding: 0;
+}
  .mobile-icon{
         font-size:2rem;
         display: inline-block;
@@ -238,9 +240,7 @@ footer .sirius {
      display: none;
      background-color:#EBEBEB;
     }
-    .main-menu .stricky-menu{
-       background-color: #EBEBEB; 
-    }
+    
     .main-menu li{
         display:block;
         padding-left:0;
@@ -295,7 +295,122 @@ footer .sirius {
 
     }
     /*FIN CSS DU CONTENUE PARAGRAPHE*/
+/*CSS DU CONTENUE ACCUEIL*/
+.content-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+.eds-description {
+    max-width: 10rem;
+    display: inline-block;
+}
+.eds-description img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 0.5rem;
+   
+}
+.eds-description p {
+    color: #3C3C3B;
+    margin: 0;
+}
+.eds-description .titre {
+    font-weight: 600;
+}
+.evenements {
+    margin: 0 4rem;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2rem;
+}
+.evenements .eds {
+    position: relative;
+    margin-bottom: 4rem;
+}
+.evenements .eds::before {
+    content: "";
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+    height: 100%;
+    width: 70%;
+    transform: translateX(-50%);
+    border-bottom: 1.3px solid #000000;
+    opacity: 0.3;
+}
+.evenements .eds img {
+    height: auto;
+    width: 20.5rem;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.evenements .eds .text {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 0.3rem;
+    vertical-align: top;
+}
+.evenements .eds .text p {
+    margin: 0;
+}
+.evenements .eds .text .titre {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #000000;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+.evenements .eds .text .titre::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 11rem;
+    border-bottom: 1.3px solid #000000;
+    opacity: 0.3;
+}
+.evenements .eds .text .icon {
+    display: inline-block;
+    height: auto;
+    width: 1.2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
 
+}
+.evenements .eds .text .date {
+    display: inline-block;
+    color: #F02A2A;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+.evenements .eds .text .adresse {
+    color: #003192;
+    font-weight: 600;
+}
+.evenements .eds .text .description {
+    max-width: 15rem;
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+}
+.evenements .eds .text .inscription-button {
+    display: inline-block;
+    text-align: center;
+    color: #FFF121;
+    background-color: #F02A2A;
+    font-weight: 900;
+    padding: 0.5rem 0.7rem;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+}
+.evenements .eds .text .inscription-button:hover {
+    text-decoration: none;
+}
+/*FIN DU CONTENUE ACCUEIL*/
     .main-menu ul{
         padding: 0;
         margin: 0;
